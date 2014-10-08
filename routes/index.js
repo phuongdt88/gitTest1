@@ -34,7 +34,13 @@ router.post('/process', function(req, res){
 });
 
 router.get('/helloworld', function(req, res){
-    res.send('Hello World');
+    res.send('Hello World la la la');
+});
+
+router.get('/helloworld2', function(req, res){
+    res.render('helloworld2', {
+        title: 'Nua gia'
+    });
 });
 
 module.exports = router;
