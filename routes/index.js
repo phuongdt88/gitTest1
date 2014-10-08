@@ -33,4 +33,8 @@ router.post('/process', function(req, res){
     });
 });
 
+router.get('/helloworld', function(req, res){
+    res.send('Hello World');
+});
+
 module.exports = router;
